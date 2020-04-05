@@ -1,0 +1,153 @@
+.Exp {
+  background-image: url("https://marketingland.com/wp-content/ml-loads/2015/12/ss-career-growth-steps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleExp {
+  margin-bottom: -4vh;
+}
+
+.Exp h1 {
+  font-size: 7vh;
+}
+
+.firstExp {
+  /* width: 20vw; */
+  margin-left: 3vw;
+}
+
+.BGLLOGO {
+  background-image: url('../component/d27a916e-1fab-4eee-9643-8b56f57ea351.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 13vh;
+  width: 14vh;
+}
+
+ul {
+  padding-inline-start: 0;
+  width: 20vw;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1vh;
+  text-align: justify;
+}
+
+.secondExp {
+  /* width: 20vw; */
+  margin-left: 8vw;
+}
+
+.Exps {
+  display: flex;
+}
+
+.Barsan {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.EtoileLogo {
+  background-image: url("https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/21430457_1547587461944026_9098080005056868384_n.jpg?_nc_cat=110&_nc_sid=85a577&_nc_oc=AQn9dFT6kdWzGwRvNygVRQPvn9KVErtioEAdQY7QxWUYklCH9jpIkaP2Z0eVpFkn1eI&_nc_ht=scontent-amt2-1.xx&oh=41ff845e0c7fa94db0d642913c4876f6&oe=5EA3FB00");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 13vh;
+  width: 13vh;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .Exp {
+    background-image: url("https://blog.sellingenergy.com/hubfs/Blog_images/2017/Feb_1-_15/how-hackers-innovators-icons-accelerate-success.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 220vh;
+    width: 100%;
+  }
+
+  .titleExp {
+    margin-bottom: -4vh;
+    margin-top: 2vh;
+  }
+
+  .firstExp,.secondExp {
+    width: 80vw;
+    margin-left: 0vw;
+  }
+
+  .firstExp h2{
+    text-align: -webkit-center;
+  }
+
+  .companyInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Exp h1 {
+    font-size: 5vh;
+    color: white;
+    text-align: center;
+  }
+
+  .Exps {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Exps h1,h2 {
+    font-size: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+  }
+
+
+  .Barsan {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+  }
+
+  ul {
+    padding-inline-start: 0;
+    width: 80vw;
+    color: white;
+    font-weight: bold;
+  }
+  
+  li {
+    list-style: none;
+    margin-bottom: 1vh;
+    text-align: justify;
+  }
+
+  .companyInfo p{
+    margin-bottom: -1vh;
+    font-size: 5vw;
+  }
+
+  .companyInfo{
+    margin-bottom: 6vh;
+    font-weight: bold;
+  }
+
+
+
+}

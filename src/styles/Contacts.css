@@ -1,0 +1,66 @@
+.Contacts {
+    background-image: url('https://www.elo.com/files/public/images/01_solutions/01_general-solutions/banner_640_loesungen_email_management_de_v01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Linkedin{
+    background-image: url('https://cdn2.iconfinder.com/data/icons/social-media-square-set/960/LinkedIn-512.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 10vh;
+    width: 10vw;
+    margin-left: 40vw;
+    margin-top: 18vh;
+}
+
+.GitHub{
+    background-image: url('https://stikka.io/30-large_default/github-logo-sticker.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 20vh;
+    width: 10vw;
+    margin-top: 14vh;
+    margin-left: -2vw;
+
+}
+
+.Email {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/google-suits/32/16_gmail_email_mail_communication_message_service-512.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 10vh;
+    width: 8vw;
+    margin-top: 17vh;
+}
+
+.phone{
+    background-image: url('https://i.pinimg.com/originals/63/b3/d9/63b3d9ccb82555c2c9611ba41a62044d.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 20vh;
+    width: 10vw;
+    /* margin-left: 14vw; */
+    margin-top: 15vh;
+}
+
+.phoneNumber{
+display: flex;
+flex-direction: column;
+}
+
+.num{
+    margin-left: 1.6vw;
+}
+
+
+
