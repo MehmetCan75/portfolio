@@ -1,20 +1,40 @@
-import React from 'react';
+import React from "react";
 import "../styles/Header.css";
 
-export default function Header() {
 
-  const handleScrollToStats = () => {
-    window.scrollTo({
-        top: 725,
-        behavior: 'smooth' 
-    })
+
+const Header = props => {
+  const { listRef } = props
+
+const handleScrollToStats = ref => {
+  console.log(ref)
+  window.scrollTo(0,ref.offsetTop)
+
 }
+
+
+  // const handleScrollToStats = () => {
+  //   window.scrollTo({
+  //     "behavior": "smooth",
+  //     "top": (0, window.innerHeight)
+  // });}
+
+
+
 
   return (
     <div className="head">
       <div className="header">
         <h1>Mehmet Can OZMEN</h1>
-        <div className="arrow" onClick={handleScrollToStats}>
+        {/* <div className="arrow" onClick={handleScrollToStats}> */}
+
+
+        <div>
+        {listRef.map((ref,i) =>(
+            <button className="title" key={i} onClick={handleScrollToStats(ref)}>{ref.title}</button>
+
+        ))}
+
           <span></span>
           <span></span>
           <span></span>
@@ -24,5 +44,5 @@ export default function Header() {
   );
 }
 
-
+export default Header;
 
