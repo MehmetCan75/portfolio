@@ -6,11 +6,13 @@ import "../styles/Header.css";
 const Header = props => {
   const { listRef } = props
 
-const handleScrollToStats = ref => {
+
+const handleScrollToStats = (ref) => {
   console.log(ref)
-  window.scrollTo(0,ref.offsetTop)
+  window.scrollTo(ref)
 
 }
+
 
 
   // const handleScrollToStats = () => {
@@ -27,20 +29,17 @@ const handleScrollToStats = ref => {
       <div className="header">
         <h1>Mehmet Can OZMEN</h1>
         {/* <div className="arrow" onClick={handleScrollToStats}> */}
-
-
         <div>
         {listRef.map((ref,i) =>(
-            <button className="title" key={i} onClick={handleScrollToStats(ref)}>{ref.title}</button>
-
+            <button className="title" key={i} onClick={handleScrollToStats}>{ref.title}</button>
         ))}
-
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
     </div>
+
   );
 }
 
