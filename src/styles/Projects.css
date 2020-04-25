@@ -34,7 +34,7 @@
 
 
 .WoL {
-    background-image: url('../component/WinOrLose.png');
+    background-image: url('../assets/WinOrLose.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 20vh;
@@ -43,7 +43,7 @@
 }
 
 .sportyfind {
-    background-image: url('../component/logo-sportyfind-2.png');
+    background-image: url('../assets//logo-sportyfind-2.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 20vh;

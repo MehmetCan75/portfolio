@@ -22,11 +22,15 @@ const List = () => {
     acc[value.id] = React.createRef();
     return acc;
   }, {});
+
   const handleClick = id =>
     refs[id].current.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
+
+
+    
   return (
     <div>
       <ul>

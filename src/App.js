@@ -1,83 +1,65 @@
-import React, { Component } from 'react';
-import Header from './component/Header';
-import WhoAmI from './component/WhoAmI';
-import Exp from './component/Exp';
-import Formation from './component/Formation'
-import Competences from './component/Competences'
-import Contacts from './component/Contacts'
-import Projects from './component/Projects'
-import List from './component/List'
+import React, { Component } from "react";
+import Header from "./component/Header";
+import WhoAmI from "./component/WhoAmI";
+import Exp from "./component/Exp";
+import Formation from "./component/Formation";
+import Competences from "./component/Competences";
+import Contacts from "./component/Contacts";
+import Projects from "./component/Projects";
+import "./App.css";
 
-import './App.css';
+var Scroll = require('react-scroll');
+var Element = Scroll.Element;
 
- 
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      listRef: []
+      listRef: [],
     };
 
-    // Creation des Refs
     this.WhoAmI = React.createRef();
-    this.Exp = React.createRef();
-    this.Formation = React.createRef();
-    this.Projects = React.createRef()
-
+    this.Exp = React.createRef()
   }
 
 
+  
 
   componentDidMount() {
     const {listRef} = this.state
-
-    listRef.push({
-      id: 1,
+     
+    listRef.push(
+      {
       ref: this.WhoAmI,
-      title: 'Qui suis-je',
-    },
-    {
-      id: 2,
+      title: "Qui suis-je",
+      },    
+      {
       ref: this.Exp,
       title: 'Expériences professionnelles',
-    },
-    {
-      id:3,
-      ref: this.Formation,
-      title: 'Formations',
-    },
-    {
-      id:4,
-      ref: this.Projects,
-      title: 'Projets',
-    }
-    
-    
-    )
+    },)
 
-    this.setState({listRef});
+    this.setState({ listRef });
+
+    
   }
 
+  
 
-
-
-render (){
-  const {listRef} = this.state
-  return (
-    <div className="App">
-      <Header listRef={listRef}></Header>
-      <WhoAmI></WhoAmI>
-      <Exp></Exp>
-      {/* <List></List> */}
-      <Formation></Formation>
-      <Projects></Projects>
-      <Competences></Competences>
-      <Contacts></Contacts>
-    </div>
-  );
-}
+  render() {
+    return (
+      <div className="App">
+        <Header listRef={this.state.listRef} />
+        <Element><WhoAmI></WhoAmI></Element>
+        <Element><Exp></Exp></Element>
+        <Element><Formation></Formation></Element>
+        <Element name='proj'><Projects></Projects></Element>
+        <Element><Competences></Competences></Element>
+        <Element><Contacts></Contacts></Element>
+      </div>
+    );
+  }
 }
 
 export default App;
