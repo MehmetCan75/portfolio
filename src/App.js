@@ -28,21 +28,20 @@ class App extends Component {
   
 
   componentDidMount() {
-    const {listRef} = this.state
-     
+    const { listRef } = this.state;
     listRef.push(
       {
-      ref: this.WhoAmI,
-      title: "Qui suis-je",
-      },    
+        ref: this.WhoAmI,
+        name: "who",
+        title: "Qui suis-je",
+      },
       {
-      ref: this.Exp,
-      title: 'Expériences professionnelles',
-    },)
-
+        ref: this.Exp,
+        name: "exp",
+        title: "Expériences professionnelles",
+      }
+    );
     this.setState({ listRef });
-
-    
   }
 
   
@@ -51,10 +50,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header listRef={this.state.listRef} />
-        <Element><WhoAmI></WhoAmI></Element>
-        <Element><Exp></Exp></Element>
+        <Element name='who'><WhoAmI></WhoAmI></Element>
+        <Element name='exp'><Exp></Exp></Element>
         <Element><Formation></Formation></Element>
-        <Element name='proj'><Projects></Projects></Element>
+        <Element><Projects></Projects></Element>
         <Element><Competences></Competences></Element>
         <Element><Contacts></Contacts></Element>
       </div>
