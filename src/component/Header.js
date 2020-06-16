@@ -18,10 +18,9 @@ const Header = (props) => {
     <div className="head">
       <div className="header">
         <h1>Mehmet Can OZMEN</h1>
-        <div style={{ display: "flex", justifyContent: "column" }}>
+        <div className="scrollMenu">
           {props.listRef.map((ref, i) => (
-            <span
-              style={{ color: "blue", margin: "10px" }}
+            <span className="eachItem"
               key={i}
               onClick={() => handleScrollTo(ref.name)}
             >

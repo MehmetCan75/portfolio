@@ -17,45 +17,48 @@ class App extends Component {
     super(props);
 
     this.state = {
-      listRef: [],
-    };
-
-    this.WhoAmI = React.createRef();
-    this.Exp = React.createRef()
-  }
-
-
-  
-
-  componentDidMount() {
-    const { listRef } = this.state;
-    listRef.push(
-      {
-        ref: this.WhoAmI,
+      listRef: [      {
         name: "who",
         title: "Qui suis-je",
       },
       {
-        ref: this.Exp,
+        name: "formation",
+        title: "Formations",
+      },
+      {
+        name: "projets",
+        title: "Projets",
+      },
+      {
+        name: "comp",
+        title: "Compétences",
+      },
+      {
         name: "exp",
         title: "Expériences professionnelles",
       }
-    );
-    this.setState({ listRef });
+      ,
+      {
+        name: "contacts",
+        title: "Contacts",
+      }
+    ],
+    };
+
+
   }
 
-  
 
   render() {
     return (
       <div className="App">
         <Header listRef={this.state.listRef} />
         <Element name='who'><WhoAmI></WhoAmI></Element>
+        <Element name="formation"><Formation></Formation></Element>
+        <Element name='projets'><Projects></Projects></Element>
+        <Element name='comp'><Competences></Competences></Element>
         <Element name='exp'><Exp></Exp></Element>
-        <Element><Formation></Formation></Element>
-        <Element><Projects></Projects></Element>
-        <Element><Competences></Competences></Element>
-        <Element><Contacts></Contacts></Element>
+        <Element name='contacts'><Contacts></Contacts></Element>
       </div>
     );
   }
